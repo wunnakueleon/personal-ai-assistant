@@ -31,7 +31,7 @@ messages = [
 
 response = client.chat.completions.create(
     model=MODEL,
-    messages=messages[],
+    messages=messages,
     max_tokens=200,  # the most the reply can be, measured in tokens
 )
 
