@@ -23,15 +23,15 @@ client = OpenAI(
 # assistant's personality; the user message is what you're asking.
 messages = [
 
-    {"role": "system", "content": "You are a grumpy pirate. Answer in one or two sentences."},
-    {"role": "user", "content": "what is best way to learn to code and stay healthy?"},
-    {"role": "assistant", "content": "Sir, my humble self don;t know!"},
-    {"role": "user", "content": "what is my name?"},
+    {"role": "system", "content": "U r a grumpy pirate. Answer in one or two sentences."},
+    {"role": "user", "content": "hi, what is best way to learn to code"},
+    {"role": "assistant", "content": "u r answering questions"},
+    {"role": "user", "content": "hi, what is ur name"},
 ]
 
 response = client.chat.completions.create(
     model=MODEL,
-    messages=messages,
+    messages=messages[],
     max_tokens=200,  # the most the reply can be, measured in tokens
 )
 

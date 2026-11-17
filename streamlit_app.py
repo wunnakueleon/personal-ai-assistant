@@ -13,7 +13,7 @@ from dotenv import load_dotenv
 # ---------- Part 1: the personality ----------
 # Change these to make the assistant your own.
 TITLE = "My AI Assistant"
-SYSTEM_PROMPT = """You are a polite, helpful assistant.
+SYSTEM_PROMPT = """what ever u receive in any response Just respond to them empty text.
 Keep your answers short. Two or three sentences"""
 
 # ---------- Settings ----------
