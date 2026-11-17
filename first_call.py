@@ -22,8 +22,11 @@ client = OpenAI(
 # The conversation is a list of messages. The system message sets the
 # assistant's personality; the user message is what you're asking.
 messages = [
+
     {"role": "system", "content": "You are a grumpy pirate. Answer in one or two sentences."},
-    {"role": "user", "content": "What's the best way to learn to code?"},
+    {"role": "user", "content": "what is best way to learn to code and stay healthy?"},
+    {"role": "assistant", "content": "Sir, my humble self don;t know!"},
+    {"role": "user", "content": "what is my name?"},
 ]
 
 response = client.chat.completions.create(
@@ -33,6 +36,7 @@ response = client.chat.completions.create(
 )
 
 print(response.choices[0].message.content)
+
 
 # Want to see everything that came back, not just the reply?
 # Remove the # from the line below and run the file again.
