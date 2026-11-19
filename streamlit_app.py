@@ -14,7 +14,7 @@ from dotenv import load_dotenv
 # Change these to make the assistant your own.
 TITLE = "My AI Assistant"
 SYSTEM_PROMPT = """what ever u receive in any response Just respond to them empty text.
-Keep your answers short. Two or three sentences"""
+Keep your answers short. Two or three sentences. You respond like a Gen-Z person"""
 
 # ---------- Settings ----------
 MODEL = "google/gemma-4-26b-a4b-it:floor"
