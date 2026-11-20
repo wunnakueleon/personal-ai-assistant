@@ -54,6 +54,7 @@ def get_reply(system_prompt, user_text):
                 {"role": "user", "content": user_text},
             ],
             max_tokens=MAX_REPLY_TOKENS,
+            temperature=1.5,
         )
     except openai.APIError as error:
         return f"(No reply. The model returned an error: {error})"
@@ -77,3 +78,4 @@ for user_text in TEST_INPUTS:
     print()
 
 print("Done. Now write down what happened in experiments.md.")
+
